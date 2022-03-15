@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #e9b991;
+    background: linear-gradient(to top, #e9b99158 , #cb4c3e56);
+}
+.contenedor {
+    background: #c88264;
+    padding: 1.2rem;
+    margin: 20px auto;
+    width: 90%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "banner banner banner banner"
+    "footer footer footer footer";
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    grid-area: header;
+}
+h1{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+nav {
+    background: #e9d391;
+    background: linear-gradient(to top, #e9d391, #cb4c3e);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin: 20px auto;
+    grid-area: nav;
+}
+.menu {
+    list-style: none;
+    padding: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu li {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    display: flex;
+    margin: 10px 20px;
+    border: 3px black solid;
+    padding: 15px;
+    border-radius: 10px;
+}
+.categ ul {
+    position: absolute;
+    display: none;
+}
+.categ ul li {
+    display: block;
+}
+.categ li:hover ul {
+    display: block;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 5px;
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white;
+}
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.libros {
+    grid-area: banner;
+}
+.banner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.banner img {
+    display: inline-block;
+    width: 12rem;
+    margin: 15px;
+    border: 2px solid #868686;
+    opacity: 0.5;
+}
+.banner img:hover {
+    opacity: 1;
+    border: solid black;
+}
+.top {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.top img {
+    width: 15%;
+    margin: 15px;
+    border: 2px solid #868686;
+}
+.top img:hover {
+    opacity: 1;
+    border: solid black;
+}
+.ficcion {
+    display: flex;
+    flex-direction: column;
+}
+.ficcion h2 {
+    text-align: center;
+    padding: 2rem;
+}
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.card {
+    width:12rem;
+}
+.card:hover {
+    box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
+    -webkit-box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
+    -moz-box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
+}
+.card img {
+    width: 12rem;
+}
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.texto h3 {
+    font-family: 'Bree Serif', serif;
+    font-size: 0.9rem;
+}
+.texto p {
+    font-family: 'Bree Serif', serif;
+    font-size: 0.9rem;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: footer;
+}
+p {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 20px;
+}
+.lugar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: lugar;
+}
+.hora {
+    grid-area: hora;
+}
+.hora ul {
+    list-style: none;
+    text-align: center;
+}
+.hora ul li {
+    padding: 2px;
+    margin: 2px;
+}
+.redes {
+    grid-area: redes;
+}
+.redes ul {
+    list-style: none;
+    text-align: center;
+}
+.redes ul li {
+    padding: 2px;
+    margin: 2px;
+}
+.redes ul li:hover {
+    background-color: black;
+}
+.pago {
+    grid-area: pago;
+}
+.pago ul {
+    list-style: none;
+    text-align: center;
+}
+.pago ul li {
+    padding: 2px;
+    margin: 2px;
+}
+/* DISEÑO PARA MEDIDA MÁXIMA DE 320PX: CELULAR */
+@media screen and (max-width:320px) {
+    header img {
+        width: 10.5rem;
+        height: 5.5rem;
+    }
+    header {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenedor {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat (4, 1fr);
+        grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "banner banner banner banner"
+        "lugar hora redes pago";
+    }
+    .libros {
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .banner img {
+        width: 15%;
+        margin: 1rem;
+        border: 2px solid #868686;
+        opacity: 0.5;
+    }
+    .ficcion .card img {
+        width: 10rem;
+        margin: 0.8rem;
+        border: 2px solid #868686;
+    }
+    footer {
+        width: 100%;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto 3fr 1fr;
+        grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "banner banner banner banner"
+        "footer footer footer footer";
+    }
+    .banner img {
+        width: 28%;
+        margin: 0.8rem;
+        border: 2px solid #868686;
+        opacity: 0.5;
+    }
+    .ficcion img {
+        width: 10rem;
+        margin: 0.8rem;
+        border: 2px solid #868686;
+    }
+}
