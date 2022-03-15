@@ -101,8 +101,10 @@ h2 {
     margin: 15px;
     border: 2px solid #868686;
     opacity: 0.5;
+    transition: all 2s ease;
 }
 .banner img:hover {
+    transform: scale(1.05, 1.05);
     opacity: 1;
     border: solid black;
 }
@@ -116,8 +118,10 @@ h2 {
     width: 15%;
     margin: 15px;
     border: 2px solid #868686;
+    transition: all 2s ease;
 }
 .top img:hover {
+    transform: scale(1.05, 1.05);
     opacity: 1;
     border: solid black;
 }
@@ -137,8 +141,10 @@ h2 {
 }
 .card {
     width:12rem;
+    transition: all 2s ease;
 }
 .card:hover {
+    transform: scale(1.1, 1.1);
     box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
     -webkit-box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
     -moz-box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
