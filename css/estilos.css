@@ -90,24 +90,6 @@ h2 {
 .libros {
     grid-area: banner;
 }
-.banner {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.banner img {
-    display: inline-block;
-    width: 12rem;
-    margin: 15px;
-    border: 2px solid #868686;
-    opacity: 0.5;
-    transition: all 2s ease;
-}
-.banner img:hover {
-    transform: scale(1.05, 1.05);
-    opacity: 1;
-    border: solid black;
-}
 .top {
     display: flex;
     position: relative;
@@ -115,8 +97,6 @@ h2 {
     flex-wrap: wrap;
 }
 .top img {
-    width: 15%;
-    margin: 15px;
     border: 2px solid #868686;
     transition: all 2s ease;
 }
@@ -139,17 +119,17 @@ h2 {
     justify-content: center;
     gap: 2.5rem;
 }
-.card {
+.cards {
     width:12rem;
     transition: all 2s ease;
 }
-.card:hover {
+.cards:hover {
     transform: scale(1.1, 1.1);
     box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
     -webkit-box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
     -moz-box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.82);
 }
-.card img {
+.cards img {
     width: 12rem;
 }
 .texto {
