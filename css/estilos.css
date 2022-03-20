@@ -30,13 +30,10 @@ header {
     align-items: center;
     grid-area: header;
 }
-h1{
+h1 {
     font-family: 'Bree Serif', serif;
     font-size: 2.5rem;
     text-transform: uppercase;
-}
-.carousel {
-    z-index: 0;
 }
 /* BARRA DE NAVEGACIÓN */
 nav {
