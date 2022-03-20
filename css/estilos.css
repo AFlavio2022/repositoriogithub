@@ -35,6 +35,10 @@ h1{
     font-size: 2.5rem;
     text-transform: uppercase;
 }
+.contaniner {
+    z-index: 0;
+}
+/* BARRA DE NAVEGACIÓN */
 nav {
     background: #e9d391;
     background: linear-gradient(to top, #e9d391, #cb4c3e);
