@@ -7,6 +7,7 @@ body {
     background: #e9b991;
     background: linear-gradient(to top, #e9b99158 , #cb4c3e56);
 }
+/* DISTRIBUCIÓN DEL CONTENEDOR DEL INDEX */
 .contenedor {
     background: #c88264;
     padding: 1.2rem;
@@ -43,6 +44,7 @@ nav {
     margin: 20px auto;
     grid-area: nav;
 }
+/* BARRA DE NAVEGACIÓN MENÚ PRESENTE EN TODAS LAS PÁGINAS */
 .menu {
     list-style: none;
     padding: 1.2rem;
@@ -81,6 +83,7 @@ a {
 a:hover {
     color: white;
 }
+/* CIERRE DE ESTILOS BARRA DE NAVEGACIÓN MENÚ PRESENTE EN TODAS LAS PÁGINAS */
 h2 {
     font-family: 'Bree Serif', serif;
     font-size: 2rem;
@@ -90,6 +93,7 @@ h2 {
 .libros {
     grid-area: banner;
 }
+/* ESTILOS PRESENTES EN LA PÁGINA TOP DE VENTAS */
 .top {
     display: flex;
     position: relative;
@@ -105,14 +109,18 @@ h2 {
     opacity: 1;
     border: solid black;
 }
+/* CIERRE DE ESTILOS PRESENTES EN LA PÁGINA TOP DE VENTAS */
+/* ESTILOS PRESENTES EN LA PÁGINA CIENCIA FICCIÓN */
 .ficcion {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.2rem;
 }
 .ficcion h2 {
     text-align: center;
     padding: 2rem;
 }
+/* CONTENEDOR DE LAS FOTOS CON SUS RESPECTIVAS ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES */
 .contenedor-cards {
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +140,7 @@ h2 {
 .cards img {
     width: 12rem;
 }
+/* FIN DE ESTILOS PRESENTES EN LA PÁGINA CIENCIA FICCIÓN */
 .texto {
     display: flex;
     align-items: center;
@@ -145,6 +154,7 @@ h2 {
     font-family: 'Bree Serif', serif;
     font-size: 0.9rem;
 }
+/* ESTILOS DEL FOOTER DONDE ESTÁN LOS DATOS ADICIONALES DE LA PÁGINA */
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -197,6 +207,8 @@ p {
     padding: 2px;
     margin: 2px;
 }
+/* FIN DE ESTILOS DEL FOOTER DONDE ESTÁN PRESENTES LAS PÁGINAS HECHAS HASTA EL MOMENTO */
+/* INICIO DE EDICIÓN CON MEDIA QUERRIES */
 /* DISEÑO PARA MEDIDA MÁXIMA DE 320PX: CELULAR */
 @media screen and (max-width:320px) {
     header img {
@@ -263,3 +275,5 @@ p {
         border: 2px solid #868686;
     }
 }
+/* FIN DE EDICIÓN DE MEDIA QUERRIES */
+/* FIN DE EDICIÓN CON ESTILOS HASTA EL MOMENTO */
